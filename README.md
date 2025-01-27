@@ -1,78 +1,56 @@
+New Feature Added:
 
-Milestone 1: Project Overview
-The eCommerce Website is a comprehensive platform designed to offer users a seamless online shopping experience while implementing modern web development techniques. The platform incorporates a user authentication system for secure and personalized access, multiple product categories for easy navigation, and a fully functional payment gateway for secure transactions.
+--> Login Page:
+A user-friendly login page has been added, featuring:
 
-Features of an Ideal ECommerce Website:
+Email and password validation.
 
+A "Show/Hide Password" toggle for enhanced user experience.
 
-1. User Authentication and Management:
+Error handling for invalid email format and password length.
 
-Secure login and signup options via email and password.
-Social media login options (e.g., Google, Facebook) for quick access.
-User profile management (view order history, manage addresses, reset passwords).
+Loading state to indicate the process of authentication.
 
-2. Product Catalog and Search:
+Navigation to a signup page for new users.
 
-Comprehensive product catalog with categories like electronics, fashion, home essentials, etc.
-Search functionality with filters (price range, rating, brand, and availability).
-Product pages with detailed descriptions, reviews, ratings, and images.
+--> Signup Functionality:
 
-3. Shopping Cart and Wishlist:
+Passwords are securely hashed using bcrypt during signup to enhance security.
 
-Shopping Cart: Add, remove, and update products with real-time price calculations.
-Wishlist: Save products for later purchase.
+The hashed password is stored in the database instead of plain text.
 
-4. Secure Payment System:
+Complete user data, including name, email, and other necessary information, is securely stored in the database.
 
-Integration with reliable payment gateways like Stripe, PayPal, or Razorpay.
-Multiple payment methods: credit/debit cards, UPI, wallets, and net banking.
-SSL encryption for transaction security.
+--> File Upload Functionality:
 
-5. Order Management:
+Users can upload files securely via the application.
 
-Real-time order tracking for customers.
-Notifications for order confirmation, shipping, and delivery updates.
+Uploaded files are validated for type and size restrictions to ensure security and compliance.
 
-6. Admin Dashboard:
+Files are stored in the server’s designated directory or cloud storage service.
 
-Add, update, or remove products and categories.
-Manage users, orders, and payment records.
-View sales analytics and track inventory.
+Proper error handling ensures seamless user experience during upload failures.
 
-7. Responsive Design:
+Technologies Used:
 
-Fully optimized for desktop, tablet, and mobile devices to ensure a great user experience across all platforms.
+React (Frontend)
 
-8. Reviews and Ratings:
+Tailwind CSS (Styling)
 
-Users can rate and review products to help other shoppers make informed decisions.
+React Router (Routing)
 
-9. Promotions and Discounts:
+Express.js (Backend)
 
-Admins can create and manage discount codes, seasonal offers, and promotional banners.
+Stripe/PayPal (Payment Gateway)
 
-10. Advanced Features (Optional):
+bcrypt (Password Hashing)
 
-AI-Powered Recommendations: Personalized product suggestions based on user behavior.
-Chat Support: Chatbot or live customer support for instant help.
-Multi-Language and Multi-Currency Support: For global accessibility.
+Installation & Setup:
 
+Clone the repository.
 
-Tech Stack (Short):
-. Frontend: React.js, Redux, Bootstrap/Tailwind CSS.
-. Backend: Node.js, Express.js.
-. Database: MongoDB (hosted on MongoDB Atlas).
-. Authentication: Firebase Authentication or OAuth 2.0.
-. Payment Gateway: Stripe or Razorpay.
-. Deployment: Frontend on Netlify/Vercel, Backend on Heroku/AWS.
-. Version Control: Git/GitHub for collaboration.
+Run npm install to install dependencies.
 
+Start the development server with npm start.
 
-
-
-Why Build This Project? (Short):
-
-. Practical Relevance: ECommerce is a high-demand, versatile application in web development.
-. Comprehensive Learning: Covers user authentication, APIs, databases, and payment systems.
-. Scalability: Can grow with features like AI recommendations or multi-vendor support.
-. Portfolio-Worthy: Showcases skills in building modern, scalable web solutions.
+Ensure you have the necessary backend setup for user authentication, file upload handling, and database integration to manage hashed passwords, user data, and uploaded files securely.
