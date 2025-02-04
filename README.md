@@ -1,29 +1,25 @@
-### Milestone 8: Product Card Component 🌟
+Milestone 9: Create Product Component
 
-In Milestone 8, we created a reusable **product card component** to display product details like name, price, and image on the homepage. The card component is dynamic, accepting product information as props. We used **array mapping** to render a card for each product, ensuring the homepage remains clean and organized with a grid or flexbox layout.
+Overview
 
-### What’s Completed:
-- Designed a reusable **card component**.
-- Created a responsive **homepage layout** to display multiple cards.
-- Passed dynamic product data into the card using props and array mapping.
+In this milestone, we have implemented the Create Product component for the Follow-Along Ecommerce project. This component allows users to create new products by entering details such as name, description, category, tags, price, stock, email, and uploading images.
 
-### Next Steps 🚀
-In the next milestone, we’ll add features like filtering and sorting. 
+Features Implemented
 
-### Submission 📥
-- Push code to GitHub (public repo).
-- Update README and share the repo link.### Milestone 8: Product Card Component 🌟
+Form Inputs: Users can input product details including name, description, category, tags, price, stock, and email.
 
-In Milestone 8, we created a reusable **product card component** to display product details like name, price, and image on the homepage. The card component is dynamic, accepting product information as props. We used **array mapping** to render a card for each product, ensuring the homepage remains clean and organized with a grid or flexbox layout.
+Image Upload & Preview: Users can upload multiple images, which will be displayed as previews before submission.
 
-### What’s Completed:
-- Designed a reusable **card component**.
-- Created a responsive **homepage layout** to display multiple cards.
-- Passed dynamic product data into the card using props and array mapping.
+Category Selection: A dropdown to choose a product category.
 
-### Next Steps 🚀
-In the next milestone, we’ll add features like filtering and sorting. 
+Validation & Submission: Required fields are enforced, and product data is logged on submission.
 
-### Submission 📥
-- Push code to GitHub (public repo).
-- Update README and share the repo link.
+Memory Optimization: Object URLs for image previews are revoked to prevent memory leaks.
+
+Technologies Used
+
+React: Functional components and hooks (useState, useEffect).
+
+Tailwind CSS: For styling.
+
+React Icons: AiOutlinePlusCircle for the image upload button.
