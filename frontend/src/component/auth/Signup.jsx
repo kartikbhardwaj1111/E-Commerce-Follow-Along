@@ -20,9 +20,9 @@ const Signup = () => {
     }
   };
   const validateFields = () => {
-    const nameError = ValidationFormObject.validteName(name);
-    const emailError = ValidationFormObject.validteEmail(email);
-    const passwordError = ValidationFormObject.validtePass(password);
+    const nameError = ValidationFormObject.validateName(name);
+    const emailError = ValidationFormObject.validateEmail(email);
+    const passwordError = ValidationFormObject.validatePass(password);
     const newErrors = {};
     if (nameError !== true) newErrors.name = nameError;
     if (emailError !== true) newErrors.email = emailError;
@@ -46,6 +46,7 @@ const Signup = () => {
         "Accept": "any",
       },
     };
+
 //axios request
     axios.post("http://localhost:8000/api/v2/user/create-user", newForm, config).then((res)=>{
       console.log(res.data);
@@ -53,6 +54,7 @@ const Signup = () => {
       console.log(err);
     })
 };
+
 return (
   <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
     <div className="sm:mx-auto sm:w-full sm:max-w-md">

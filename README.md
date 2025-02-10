@@ -1,10 +1,10 @@
-### Milestone 11: Dynamic Product Display  
+### Milestone 12: My Products Page  
 
-This milestone makes the home page dynamic by fetching and displaying product data from MongoDB.  
+This milestone focuses on displaying user-specific products by filtering them based on email.  
 
 #### Key Tasks:  
-- Create an API endpoint to fetch all product data.  
-- Implement a function to receive and display data in the frontend.  
+- Create an API endpoint to fetch products linked to the user’s email.  
+- Implement a function to retrieve and display filtered data in the frontend.  
 - Use the product card component for dynamic rendering.  
 
-This ensures smooth data flow between backend and frontend.
+This ensures users see only their added products, improving personalization.
