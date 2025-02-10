@@ -1,3 +1,16 @@
+
+### Milestone 12: My Products Page  
+
+This milestone focuses on displaying user-specific products by filtering them based on email.  
+
+#### Key Tasks:  
+- Create an API endpoint to fetch products linked to the user’s email.  
+- Implement a function to retrieve and display filtered data in the frontend.  
+- Use the product card component for dynamic rendering.  
+
+This ensures users see only their added products, improving personalization.
+
+=======
 # E-Commerce-_FollowAlong
  **Features**
 
@@ -42,7 +55,7 @@ Gained an understanding of how the frontend (React) interacts with the backend (
 3. Set Up a Simple Server
 Created a basic server using Node.js and Express, laying the foundation for the project. The server is set up to handle API requests and provide a foundation for future endpoints and business logic.
 
----
+
 ## MILESTONE 2  :-
 1. Create a Structured Folder Hierarchy
 Designed and implemented a structured folder hierarchy for the project, organizing the files in a way that ensures easy maintainability and scalability for both the frontend and backend.
@@ -298,3 +311,4 @@ By the end of this milestone, you will:
 - Enhance the UI with better styling and user experience.
 - Implement pagination if needed for better performance.
 - Add authentication checks to ensure only the logged-in user's products are displayed.
+
