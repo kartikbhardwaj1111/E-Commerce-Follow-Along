@@ -1,11 +1,11 @@
-### Milestone 12: My Products Page  
 
-This milestone focuses on displaying user-specific products by filtering them based on email.  
+### Milestone 13: Edit Uploaded Products  
+
+This milestone adds functionality to edit uploaded products, allowing users to update details in the database.  
 
 #### Key Tasks:  
-- Create an API endpoint to fetch products linked to the user’s email.  
-- Implement a function to retrieve and display filtered data in the frontend.  
-- Use the product card component for dynamic rendering.  
+- Create an endpoint to update product data in MongoDB.  
+- Add an edit button to the product card.  
+- Implement auto-fill for the form to allow easy editing of product details.  
 
-This ensures users see only their added products, improving personalization.
-
+This ensures users can modify product information efficiently.
