@@ -186,6 +186,17 @@ This milestone focuses on displaying user-specific products by filtering them ba
 
 This ensures users see only their added products, improving personalization.
 
+
+### Milestone 12: My Products Page 
+This milestone focuses on displaying user-specific products by filtering them based on email.  
+
+#### Key Tasks:  
+- Create an API endpoint to fetch products linked to the user’s email.  
+- Implement a function to retrieve and display filtered data in the frontend.  
+- Use the product card component for dynamic rendering.  
+
+This ensures users see only their added products, improving personalization.
+
 ### Milestone 13: Edit Uploaded Products  
 
 This milestone adds functionality to edit uploaded products, allowing users to update details in the database.  
@@ -193,9 +204,7 @@ This milestone adds functionality to edit uploaded products, allowing users to u
 #### Key Tasks:  
 - Create an endpoint to update product data in MongoDB.  
 - Add an edit button to the product card.  
-- Implement auto-fill for the form to allow easy editing of product details.  
-
-This ensures users can modify product information efficiently.
+- Implement auto-fill for the form to allow easy editing of product details. 
 
 # Milestone 14 - Delete Products in MongoDB
 
@@ -206,6 +215,7 @@ In this milestone, we have implemented the functionality to **delete** products 
 By completing this milestone, we have learned:
 - How to write an **endpoint** that deletes a product from MongoDB using a specific ID.
 - How to handle delete operations effectively in a **full-stack** application.
+
 
 # Milestone 15 - Navbar Component
 
@@ -220,3 +230,7 @@ In this milestone, we created a **Navbar** component and added it to all pages f
 ## Steps 📝
 - Created Nav with links: Home, My Products, Add Product, Cart.
 - Ensured responsiveness for smooth navigation across devices.
+
+
+
+
