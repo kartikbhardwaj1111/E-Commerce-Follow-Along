@@ -233,4 +233,24 @@ In this milestone, we created a **Navbar** component and added it to all pages f
 
 
 
+# Milestone 16 - Product Info Page
+
+## 🌟 Overview
+In this milestone, we created a **Product Info** page to display product details, select quantity, and add items to the cart.
+
+## 🎯 Learning Goals
+- Display product data on a new page.
+- Add quantity selection and an "Add to Cart" button.
+
+## Steps 📝
+- Created page to show product details.
+- Added quantity selector and "Add to Cart" button.
+
+## Submission Guidelines 📥
+- Push code to GitHub.
+- Ensure repository is public.
+- Update README and share the link.
+
+
+
 
