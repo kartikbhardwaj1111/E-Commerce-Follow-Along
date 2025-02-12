@@ -207,3 +207,16 @@ By completing this milestone, we have learned:
 - How to write an **endpoint** that deletes a product from MongoDB using a specific ID.
 - How to handle delete operations effectively in a **full-stack** application.
 
+# Milestone 15 - Navbar Component
+
+## 🌟 Overview
+In this milestone, we created a **Navbar** component and added it to all pages for easy navigation.
+
+## 🎯 Learning Goals
+- Create a **Nav** component.
+- **Reuse** the component across pages.
+- Make the Navbar **responsive** on all screen sizes.
+
+## Steps 📝
+- Created Nav with links: Home, My Products, Add Product, Cart.
+- Ensured responsiveness for smooth navigation across devices.
