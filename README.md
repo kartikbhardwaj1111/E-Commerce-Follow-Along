@@ -252,5 +252,30 @@ In this milestone, we created a **Product Info** page to display product details
 - Update README and share the link.
 
 
+### Milestone 17: Add to Cart Backend  
+
+In this milestone, we will create a backend endpoint to add products to the cart and store them in the database.  
+
+#### Key Tasks:  
+- Update the user schema to store cart products.  
+- Create a cart schema to manage cart items.  
+- Write an endpoint to receive and store product details in the cart.  
+
+This milestone focuses on implementing backend cart functionality for seamless shopping.
+
+
+
+### Milestone 18: Fetch Cart Items Backend  
+
+In this milestone, we will create a backend endpoint to retrieve all products in a user's cart for display on the cart page.  
+
+#### Key Tasks:  
+- Create an endpoint to handle requests from the cart page.  
+- Fetch all cart products using the user's email.  
+
+This milestone focuses on implementing backend logic to retrieve cart items efficiently.
+
+
+
 
 
