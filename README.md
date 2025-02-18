@@ -292,6 +292,19 @@ Addresses section with "Add Address" button.
 "No address found" message if no address is available.
 This milestone helps you understand how to display a user profile page with dynamic data.
 
+### Milestone 21 - Address Form Implementation
+### 🌟 Overview
+Implemented an Address Form page to collect and store user address details.
+
+### 🎯 Learning Goals
+Create a frontend form to take user address details.
+Capture country, city, address1, address2, zip code, and address type.
+### Steps 📝
+Created an address form page.
+Managed input data using state.
+Navigated to the form when clicking "Add Address" in the profile.
+This milestone helps in understanding how to build and manage an address form.
+
 
 
 
