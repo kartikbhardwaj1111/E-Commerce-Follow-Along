@@ -1,4 +1,4 @@
-import CartProduct from '../components/auth/cartProduct';
+import CartProduct from '../components/auth/CartProduct';
 import NavBar from '../components/auth/nav';
  
 import { useState, useEffect } from 'react';
