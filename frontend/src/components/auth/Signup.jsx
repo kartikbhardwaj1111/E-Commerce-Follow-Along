@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
@@ -20,9 +20,9 @@ const Signup = () => {
     }
   };
   const validateFields = () => {
-    const nameError = ValidationFormObject.validateName(name);
-    const emailError = ValidationFormObject.validateEmail(email);
-    const passwordError = ValidationFormObject.validatePass(password);
+    const nameError = ValidationFormObject.validteName(name);
+    const emailError = ValidationFormObject.validteEmail(email);
+    const passwordError = ValidationFormObject.validtePass(password);
     const newErrors = {};
     if (nameError !== true) newErrors.name = nameError;
     if (emailError !== true) newErrors.email = emailError;
@@ -46,90 +46,93 @@ const Signup = () => {
         "Accept": "any",
       },
     };
-
-//axios request
-    axios.post("http://localhost:8000/api/v2/user/create-user", newForm, config).then((res)=>{
-      console.log(res.data);
-    }).catch((err)=>{
-      console.log(err);
-    })
+ // Axios request to backend
+ axios
+ .post("http://localhost:8000/api/v2/user/create-user", newForm, config)
+ .then((res) => {
+   alert("User created successfully!"); // Success message from server
+   console.log(res.data); // Success response from server
+ })
+ .catch((err) => {
+   alert(err.response ? err.response.data.message : err.message); // Error message from server
+   console.error(err.response ? err.response.data : err.message); // Error handling
+ });
 };
-
-return (
-  <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-    <div className="sm:mx-auto sm:w-full sm:max-w-md">
-      <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-        Register as a new user
-      </h2>
-    </div>
-    <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-      <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-        <form className="space-y-6" onSubmit={handleSubmit}>
-          <div>
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Full Name
-            </label>
-            <div className="mt-1">
-              <input
-                type="text"
-                name="name"
-                autoComplete="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className={`appearance-none block w-full px-3 py-2 border ${
-                  errors.name ? "border-red-500" : "border-gray-300"
-                } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
-              />
-              {errors.name && (
-                <p className="text-red-500 text-xs mt-1">{errors.name}</p>
-              )}
+  return (
+    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <div className="sm:mx-auto sm:w-full sm:max-w-md">
+        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          Register as a new user
+        </h2>
+      </div>
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          <form className="space-y-6" onSubmit={handleSubmit}>
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Full Name
+              </label>
+              <div className="mt-1">
+                <input
+                  type="text"
+                  name="name"
+                  autoComplete="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className={`appearance-none block w-full px-3 py-2 border ${
+                    errors.name ? "border-red-500" : "border-gray-300"
+                  } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
+                />
+                {errors.name && (
+                  <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+                )}
+              </div>
             </div>
-          </div>
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Email address
-            </label>
-            <div className="mt-1">
-              <input
-                type="email"
-                name="email"
-                autoComplete="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className={`appearance-none block w-full px-3 py-2 border ${
-                  errors.email ? "border-red-500" : "border-gray-300"
-                } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
-              />
-              {errors.email && (
-                <p className="text-red-500 text-xs mt-1">{errors.email}</p>
-              )}
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Email address
+              </label>
+              <div className="mt-1">
+                <input
+                  type="email"
+                  name="email"
+                  autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className={`appearance-none block w-full px-3 py-2 border ${
+                    errors.email ? "border-red-500" : "border-gray-300"
+                  } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+                )}
+              </div>
             </div>
-          </div>
-          <div>
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Password
-            </label>
-            <div className="mt-1 relative">
-              <input
-                type={visible ? "text" : "password"}
-                name="password"
-                autoComplete="current-password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className={`appearance-none block w-full px-3 py-2 border ${
-                  errors.password ? "border-red-500" : "border-gray-300"
-                } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
-              />
-              {visible ? (
+            <div>
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Password
+              </label>
+              <div className="mt-1 relative">
+                <input
+                  type={visible ? "text" : "password"}
+                  name="password"
+                  autoComplete="current-password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className={`appearance-none block w-full px-3 py-2 border ${
+                    errors.password ? "border-red-500" : "border-gray-300"
+                  } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
+                />
+                {visible ? (
                   <AiOutlineEye
                     className="absolute right-2 top-2 cursor-pointer"
                     size={25}
@@ -182,7 +185,7 @@ return (
             </div>
             <div>
               <button
-                type="submit"
+                type="submit" onClick={handleSubmit}
                 className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
               >
                 Submit

@@ -279,3 +279,35 @@ This milestone focuses on implementing backend logic to retrieve cart items effi
 
 
 
+### Milestone 19: Cart Page Functionality 🎯 Goals:
+
+Display products from the /cart endpoint.
+Add + and - buttons to adjust product quantities.
+Update backend endpoints to handle quantity changes.
+### 📝 Steps:
+
+Cart Page: Fetch and display products.
+Quantity Management: Implement buttons to modify quantity.
+Backend Updates: Create endpoints for quantity adjustments and ensure database consistency.
+
+### Milestone 20 - User Profile Page and Backend Endpoint
+🌟 Overview
+Implemented a profile page to display user data and a backend endpoint to send user data via email.
+
+### 🎯 Learning Goals
+Create a backend endpoint to send user data via email.
+Develop a frontend profile page to display user data (profile photo, name, email, and addresses).
+### Steps 📝
+Created backend endpoint to send user data.
+Developed frontend profile page with:
+Profile photo, name, and email.
+Addresses section with "Add Address" button.
+"No address found" message if no address is available.
+This milestone helps you understand how to display a user profile page with dynamic data.
+
+
+
+
+
+
+
