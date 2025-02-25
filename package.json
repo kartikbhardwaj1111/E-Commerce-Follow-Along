@@ -1,0 +1,20 @@
+{
+  "name": "e-commerce-follow-along",
+  "version": "1.0.0",
+  "description": "This project is a full-stack e-commerce platform developed using the MERN stack: MongoDB, Express.js, React.js, and Node.js. It integrates scalable APIs, secure authentication, and robust product management functionalities to provide a seamless user experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartikbhardwaj1111/E-Commerce-Follow-Along.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kartikbhardwaj1111/E-Commerce-Follow-Along/issues"
+  },
+  "homepage": "https://github.com/kartikbhardwaj1111/E-Commerce-Follow-Along#readme"
+}
