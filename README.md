@@ -321,6 +321,27 @@ This milestone helps in understanding how to build and manage an address form.
 
 
 
+### Milestone 23 - Place Order & Select Address Page
 
+### 🌟 Overview
+
+In this milestone, we will implement the “Place Order” feature, allowing users to select a delivery address and finalize their order.
+
+### 🎯 Learning Goals
+	•	Add a “Place Order” button to the cart.
+	•	Create a “Select Address” page to choose a delivery address.
+	•	Write a Mongoose schema to store order details.
+
+### Steps 📝
+	1.	Place Order Button:
+	•	Add a “Place Order” button to the cart page.
+	•	Navigate to the “Select Address” page on click.
+	2.	Create Select Address Page:
+	•	Display all user addresses on this page.
+	•	Allow users to select one as the delivery address.
+	3.	Backend Endpoint:
+	•	Write an endpoint to fetch all user addresses.
+	4.	Mongoose Schema:
+	•	Define a schema to store order details, including the selected address and product items.
 
 
