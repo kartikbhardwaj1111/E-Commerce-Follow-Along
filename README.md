@@ -344,4 +344,6 @@ In this milestone, we will implement the “Place Order” feature, allowing use
 	4.	Mongoose Schema:
 	•	Define a schema to store order details, including the selected address and product items.
 
+Why This Matters 🚀
 
+This milestone helps implement essential e-commerce functionality—selecting delivery addresses and storing order details in the backend.
