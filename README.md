@@ -347,3 +347,44 @@ In this milestone, we will implement the “Place Order” feature, allowing use
 Why This Matters 🚀
 
 This milestone helps implement essential e-commerce functionality—selecting delivery addresses and storing order details in the backend.
+
+
+
+# Milestone 24 🚀  
+
+## Overview  
+In this milestone, we will create an Order Confirmation page to display order details.  
+
+## Steps  
+1. Show all products being ordered.  
+2. Display the selected delivery address.  
+3. Show the total cart value.  
+4. Add a "Place Order" button at the bottom.  
+
+### Note  
+This milestone helps in understanding how to implement the place order functionality.
+
+
+
+
+
+### Milestone 25 🚀
+
+### Overview
+
+In this milestone, we will create a backend endpoint for placing orders.
+
+### Steps 📝
+
+Create an endpoint to receive products, user details, and address.
+
+Retrieve user ID using the email.
+
+Generate separate orders for each product with the same address.
+
+Store order details in MongoDB using the order schema.
+
+This milestone helps in understanding order placement in the backend.
+
+
+
