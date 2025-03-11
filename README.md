@@ -388,3 +388,26 @@ This milestone helps in understanding order placement in the backend.
 
 
 
+
+
+
+### Milestone 26 🚀
+
+### Overview
+
+In this milestone, we will create a backend endpoint to fetch all orders of a user.
+
+### Steps
+
+Create an endpoint that receives the user’s email.
+
+Retrieve the user’s _id using the email.
+
+Fetch all orders associated with the user's _id.
+
+Send the retrieved orders in the response.
+
+Note
+
+This milestone helps in understanding how to fetch all orders of a user efficiently.
+
