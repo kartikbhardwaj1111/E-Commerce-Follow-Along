@@ -442,3 +442,30 @@ Add a Cancel Order button for each order in the My Orders page.
 Hide the button if the order is already canceled.
 Create a backend endpoint to receive the orderId.
 Fetch the order, update its status to "canceled", and save it.
+
+
+### Milestone 29: Integrating PayPal Payment Gateway
+
+### Overview
+
+In this milestone, we will integrate PayPal's payment gateway into our application, allowing users to make online payments.
+
+### Learning Goals 🎯
+
+Understand how to use the PayPal API.
+
+Implement online payments in the application.
+
+### Steps 📝
+
+Create a PayPal account and access the PayPal Developer Dashboard.
+
+Generate a sandbox account and copy the User ID.
+
+Retrieve your PayPal Client ID from the sandbox accounts.
+
+In the Order Confirmation page, add two payment options: Cash on Delivery (COD) and Online Payment (PayPal).
+
+Use radio buttons to toggle between COD and PayPal.
+
+Display the PayPal payment button when the online payment option is selected.
