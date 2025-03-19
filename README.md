@@ -469,3 +469,23 @@ In the Order Confirmation page, add two payment options: Cash on Delivery (COD) 
 Use radio buttons to toggle between COD and PayPal.
 
 Display the PayPal payment button when the online payment option is selected.
+
+
+
+
+### Milestone 30: Implementing PayPal Payment Integration
+
+### Overview
+In this milestone, we will complete the PayPal payment integration by implementing the PayPal payment button in our application.
+
+### Learning Goals 🎯
+
+Utilize the PayPal API to process payments.
+Integrate PayPal's payment options into the frontend.
+
+### Steps 📝
+Use the PayPal Client ID from your sandbox account.
+Install react-paypal-js to integrate PayPal payments.
+Implement the PayPalScriptProvider component to load the PayPal SDK.
+Display PayPal payment buttons when the Online Payment option is selected.
+Ensure users can complete transactions using PayPal.
