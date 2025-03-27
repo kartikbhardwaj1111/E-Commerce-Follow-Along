@@ -519,3 +519,17 @@ Verify → Check state persistence across pages
 ⚡ useDispatch → Update state
 ⚡ useSelector → Read state
 ⚡ Redux → Centralized data
+
+
+
+### Milestone 33: JWT Token and Cookies  
+
+Generate a JWT token and store it in a cookie for authentication.  
+
+#### Key Tasks:  
+- Install `jsonwebtoken`.  
+- Use `sign` to create a JWT with email and ID.  
+- Set `maxAge` for expiration.  
+- Store the token in a cookie via the response.  
+
+This milestone enhances authentication security using JWT tokens.
