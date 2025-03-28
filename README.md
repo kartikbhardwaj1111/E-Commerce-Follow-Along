@@ -546,3 +546,14 @@ Validate the JWT token stored in cookies to secure user authentication.
 
 This milestone enhances security by enforcing JWT validation across the app.
 
+### Milestone 35: Project Deployment  
+
+Deploy both the frontend and backend to make the project live.  
+
+#### Key Tasks:  
+•⁠  ⁠Deploy the backend using a hosting service and get the deployment link.  
+•⁠  ⁠Update the frontend to use the deployed backend URL.  
+•⁠  ⁠Deploy the frontend using a hosting service.  
+•⁠  ⁠Ensure both frontend and backend are working properly.  
+
+This milestone completes the project with a fully deployed and functional website. 🚀
