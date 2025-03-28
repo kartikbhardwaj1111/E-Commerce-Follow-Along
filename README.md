@@ -533,3 +533,16 @@ Generate a JWT token and store it in a cookie for authentication.
 - Store the token in a cookie via the response.  
 
 This milestone enhances authentication security using JWT tokens.
+
+
+### Milestone 34: JWT Token Validation  
+
+Validate the JWT token stored in cookies to secure user authentication.  
+
+#### Key Tasks:  
+- Extract the token from browser cookies and send it to the server.  
+- Implement a middleware function to validate the token.  
+- Ensure protected pages require authentication before access.  
+
+This milestone enhances security by enforcing JWT validation across the app.
+
